@@ -1,0 +1,84 @@
+.container {
+    width: min(80ch, 100vw - 2rem);
+    margin-inline: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem;
+}
+
+img.bild1{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(107, 107, 107);
+}
+
+.hero {
+    display: grid;
+    grid-template-areas: "stack";
+}
+
+.hero > * {
+    grid-area: stack;
+}
+
+.hero > h1 {
+    place-self: center;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    outline: auto;
+    outline-style: groove;
+    outline-color: rgb(0, 0, 0);
+    outline-width: 0.2ch;   
+    padding: 1rem; 
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+:root {
+    --color-light: #f0f0f0;
+    --color-dark: #767676  ;
+    --color-primary: white;
+    --color-secondary:#4a4a4a;
+}
+.btn {
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0.25rem;
+    padding: 0.175rem 0.35rem;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border: 1px solid transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn:hover {
+    background-color: var(--color-primary);
+}
+.btn-rounded {
+    border-radius: 30%;
+}
